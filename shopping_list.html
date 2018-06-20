@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping list</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>Ma liste de course</h1>
+            <hr>
+        </header>
+
+        <div class="last-item">
+            <h4>Dernier élément ajouté:</h4>
+            <!-- display last added item -->
+            <p id="last-item">La liste est vide</p>
+        </div>
+        <div class="shopping-list">
+            <form action="" method="POST">
+                <input type="text" name="item" value="">
+                <button class="button" id="add">Ajouter</button>           <!-- add the new item to the add of the list -->
+                <button class="button" id="delete">Supprimer</button>      <!-- delete the item in the field or the last if empty -->
+            </form>
+            <div class="list">
+                <h4>Ma liste:</h4>
+                <ul id="list">
+                    <!-- append list items here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="shopping_script.js"></script>
+</html>
